@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    // For GitHub Pages SPAs this helps keep deep links working.
+    (function() {
+      var segment = window.location.pathname.replace(/\/+/g,'/').split('/').filter(Boolean);
+      // If not root (username.github.io/repo) we still just send them to index with hash.
+      var redirect = '/#' + window.location.pathname + window.location.search + window.location.hash;
+      window.location.replace(redirect);
+    })();
+  </script>
+  <style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:24px}</style>
+</head>
+<body>
+  <p>Redirecting… If you are not redirected, <a href="/#/">click here</a>.</p>
+</body></html>
